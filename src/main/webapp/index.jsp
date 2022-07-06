@@ -13,10 +13,10 @@
 <body>
 <h1>Application menu:</h1>
 <ol>
-    <li><a href="/students/viewAllStudents">Students info:</a></li>
-    <li><a href="/teachers/viewAllTeachers">Teachers info:</a></li>
-    <li><a href="/group/viewAllGroup">Group info:</a></li>
-    <li><a href="/universities/viewAllUniversities">Universities info:</a></li>
+    <li><a href="/app/students/viewAllStudents">Students info:</a></li>
+    <li><a href="/app/teachers/viewAllTeachers">Teachers info:</a></li>
+    <li><a href="/app/group/viewAllGroup">Group info:</a></li>
+    <li><a href="/app/universities/viewAllUniversities">Universities info:</a></li>
 
 </ol>
 </body>

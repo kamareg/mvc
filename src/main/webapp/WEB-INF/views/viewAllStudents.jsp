@@ -6,11 +6,35 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-    <title>Title</title>
+    <title>Students info</title>
 </head>
 <body>
+<h2>Students info:</h2>
+<table border="1" cellspacing="10", cellpadding="10">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Group</th>
+        <th>Edit</th>
+        <th>Remove</th>
+    </tr>
 
+    <c:forEach var="student" items="${listOfStudents}">
+    <tr>
+        <td>${student.id}</td>
+        <td>${student.name}</td>
+        <td>${student.age}</td>
+        <td>${student.group}</td>
+        <td><a href="/students/editStudent/${student.id}">Edit</a></td>
+        <td><a href="/students/removeStudent/${student.id}">Remove</a></td>
+
+    </tr>
+    </c:forEach>
+</table>
+<p><a href="/app/students/addStudent">Add student</a></p>
 </body>
 </html>
