@@ -2,10 +2,7 @@ package org.example.controllers;
 
 import org.example.entities.Student;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -25,15 +22,23 @@ public class StudentController {
     @GetMapping
     @RequestMapping(value = "/addStudent", method = RequestMethod.GET)
     public ModelAndView addStudent () {
-        studentList = (studentList != null) ? studentList: getAllStudents();
-        return new ModelAndView("viewAllStudents", "listOfStudents", studentList);
+
+
+        return new ModelAndView("addStudent", "command", new Student());
+    }
+
+    @RequestMapping(value = "/saveStudent", method = RequestMethod.POST)
+    public ModelAndView saveStudent (@ModelAttribute Student student) {
+        studentList.add(new Student(student.getId(), student.getName(), student.getAge(), student.getGroup()));
+
+        return new ModelAndView("redirect:/students/viewAllStudents");
     }
 
     @GetMapping
     @RequestMapping(value = "/editStudent", method = RequestMethod.GET)
     public ModelAndView editStudent () {
         studentList = (studentList != null) ? studentList: getAllStudents();
-        return new ModelAndView("viewAllStudents", "listOfStudents", studentList);
+        return new ModelAndView("addStudent", "command", new Student());
     }
 
     @GetMapping
@@ -44,7 +49,7 @@ for (int i = 0; i < studentList.size() ; i++) {
     if (id == studentList.get(i).getId()) {
         studentList.remove(studentList.get(i));
     }
-}        return new ModelAndView("redirect:/app/students/viewAllStudents");
+}        return new ModelAndView("redirect:/students/viewAllStudents");
     }
 private List<Student> getAllStudents () {
         List<Student> studentList = new ArrayList<>();

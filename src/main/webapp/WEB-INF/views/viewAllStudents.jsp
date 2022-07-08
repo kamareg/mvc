@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>Students info</title>
+    <link href="css/demo.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <h2>Students info:</h2>
@@ -29,8 +30,8 @@
         <td>${student.name}</td>
         <td>${student.age}</td>
         <td>${student.group}</td>
-        <td><a href="/students/editStudent/${student.id}">Edit</a></td>
-        <td><a href="/students/removeStudent/${student.id}">Remove</a></td>
+        <td><a href="/app/students/editStudent/${student.id}">Edit</a></td>
+        <td><a href="/app/students/removeStudent/${student.id}">Remove</a></td>
 
     </tr>
     </c:forEach>

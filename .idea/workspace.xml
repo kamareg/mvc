@@ -9,13 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8a7c93f-ec02-4aca-92be-14abdbfa1af7" name="Changes" comment="19">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/demo.css" afterDir="false" />
+    <list default="true" id="d8a7c93f-ec02-4aca-92be-14abdbfa1af7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aspects/AOPConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aspects/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addStudent.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/demo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewAllStudents.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewAllStudents.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +31,6 @@
       <list>
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -56,16 +59,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/mvc",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "spring.configuration.checksum": "bf3d6d02569807fa3e6df7de1838dd26"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Tomcat 9.0.64" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.64" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.64">
+    <configuration name="index.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8483/app/index.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.64" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.64" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="18" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8483/app" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="mvc:war exploded">
           <settings>
@@ -75,7 +82,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="28d41463-792b-4779-adc4-bcf13e623f5b" />
-        <option name="HTTP_PORT" value="8480" />
+        <option name="HTTP_PORT" value="8483" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -152,6 +159,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.jsp" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.jsp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -161,17 +177,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656935917391</updated>
-      <workItem from="1656935919621" duration="5949000" />
-      <workItem from="1657109709809" duration="5097000" />
+      <workItem from="1656935919621" duration="5765000" />
+      <workItem from="1657202897803" duration="407000" />
+      <workItem from="1657204680440" duration="13798000" />
     </task>
-    <task id="LOCAL-00001" summary="18">
-      <created>1656942643492</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1656942643492</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,9 +196,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="18" />
-    <option name="LAST_COMMIT_MESSAGE" value="18" />
   </component>
 </project>

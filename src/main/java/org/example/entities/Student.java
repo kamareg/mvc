@@ -8,6 +8,10 @@ public class Student {
     private int age;
     private String group;
 
+    public Student() {
+        super();
+    }
+
     public Student(int id, String name, int age, String group) {
         this.id = id;
         this.name = name;
